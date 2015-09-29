@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/question_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_button_bg"
+        android:src="@drawable/question_"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:layout_weight="0.20"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:background="@color/highlighted_text_material_dark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        android:layout_weight="0.1"/>
+    <TextView
+        android:id="@+id/countdown_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/highlighted_text_material_dark"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="@string/str_btn_play"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/background_floating_material_dark"
+        android:layout_weight="0.1"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/play_"
+        android:scaleType="centerInside"
+        android:padding="5dp"
+        android:background="@drawable/rectangle_button_bg"
+        android:layout_weight="0.2"
+        android:text="Pause" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_button_bg"
+        android:src="@drawable/stop_"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:layout_weight="0.2"
+        android:text="Stop" />
+
+</LinearLayout>
